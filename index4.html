@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+    </style>
+    <title>Opacity</title>
+</head>
+<body>
+    <h1>Opacity</h1>
+    
+    <label for="image-select">Pilih Gambar:</label>
+    <select id="image-select">
+        <option value="image1">Gambar 1</option>
+        <option value="image2">Gambar 2</option>
+        <option value="image3">Gambar 3</option>
+    </select>
+    
+    <label for="opacity-select">Pilih Opacity:</label>
+    <select id="opacity-select">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+    
+    <div class="image-container">
+        <img id="image1" src="img/pexels-pixabay-326055.jpg" alt="Gambar 1">
+        <img id="image2" src="Img/cherry-blossom-japanese-garden-pavilion-scenery-anime-scenery-4k-wallpaper-uhdpaper.com-227@0@k.jpg" alt="Gambar 2">
+        <img id="image3" src="Img/sports-car-futuristic-mountain-sunset-scenery-digital-art-4k-wallpaper-uhdpaper.com-537@0@i.jpg" alt="Gambar 3">
+    </div>
+
+    <script>
+        const imageSelect = document.getElementById('image-select');
+        const opacitySelect = document.getElementById('opacity-select');
+        const images = document.querySelectorAll('.image-container img');
+
+        function updateImageAndOpacity() {
+            images.forEach(img => img.style.display = 'none');
+            const selectedImage = document.getElementById(imageSelect.value);
+            selectedImage.style.display = 'block';
+            selectedImage.style.opacity = opacitySelect.value;
+        }
+
+        imageSelect.addEventListener('change', updateImageAndOpacity);
+        opacitySelect.addEventListener('change', updateImageAndOpacity);
+
+        updateImageAndOpacity();
+    </script>
+</body>
+</html>

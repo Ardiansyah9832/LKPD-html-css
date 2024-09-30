@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navbar {
+    background-color: green;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 25px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.destination {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.des-fav {
+    background-color: white;
+    border-radius: 15px;
+    width: 320px;
+    margin: 23px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.des-fav img {
+    width: 100%;
+    height: 200;
+    object-fit: cover;
+}
+
+.text {
+    padding: 20px;
+}
+
+.text h3 {
+    margin: 0 0 10px 0;
+}
+
+.text p {
+    color: #666;
+    font-size: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.info span {
+    font-size: 15px;
+    color: #333;
+}
+
+.readmore {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.readmore a {
+    background-color: chartreuse;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.readmore a:hover{
+    background-color: rgb(5, 176, 228);
+}
+    </style>
+    <title>Liburan</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Destinasi Liburan</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Destinasi">Destinasi</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+    <section class="destination">
+        <div class="des-fav">
+            <img src="Img/pankeling.jpeg" alt="">
+            <div class="text">
+                <h3>Pantai Kelinking</h3>
+                <p>Destinasi wisata favorit turis dengan pemandangan pulau yang kecil dan indah</p>
+                <div class="info">
+                    <span>Viewerr: 770k</span>
+                    <span>Comments: 100k</span>
+                </div>
+                <div class="readmore">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination">
+        <div class="des-fav">
+            <img src="Img/gunrin.jpg" alt="">
+            <div class="text">
+                <h3>Gunung Rinjani</h3>
+                <p>Tempat favorit para turis untuk menjelajah dan melihat matahari terbit</p>
+                <div class="info">
+                    <span>Viewerr: 500k</span>
+                    <span>Comments: 30k</span>
+                </div>
+                <div class="readmore">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination">
+        <div class="des-fav">
+            <img src="Img/canbo.jpeg" alt="">
+            <div class="text">
+                <h3>Candi Borobudur</h3>
+                <p>Destinasi wisata favorit turis dengan keajaiban candi yang begitu megah dan indah</p>
+                <div class="info">
+                    <span>Viewerr: 1.2m</span>
+                    <span>Comments: 300k</span>
+                </div>
+                <div class="readmore">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+</body>
+</html>
